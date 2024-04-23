@@ -1,6 +1,6 @@
 /* Estilo de fundo */
 body {
-    background: linear-gradient(to bottom, #4B0082, #FFB6C1); /* Gradiente de roxo escuro (#4B0082) para rosa claro (#FFB6C1) */
+    background: linear-gradient(to bottom, #FF69B4, #FFB6C1); /* Gradiente de rosa (#FF69B4) para rosa claro (#FFB6C1) */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ nav li a:hover {
 section {
     padding: 30px;
     text-align: justify;
-    background: linear-gradient(to bottom, #4B0082, #FFB6C1); /* Gradiente de roxo escuro para rosa claro */
+    background: linear-gradient(to bottom, #FF69B4, #FFB6C1); /* Gradiente de rosa para rosa claro */
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -77,8 +77,8 @@ section p {
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Imagens não excedem a largura do contêiner */
+    height: auto; /* Altura automática para manter a proporção das imagens */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: transform 0.3s ease;
@@ -86,6 +86,68 @@ section p {
     margin: 10px; /* Espaçamento entre as imagens */
 }
 
-image-container img:hover {
-    transform: scale(1.05);
+.image-container img:hover {
+    transform: scale(1.05); /* Ampliação suave ao passar o mouse */
+}
+
+/* Estilos para parágrafos ímpares */
+.paragrafo-impar {
+    font-size: 16pt;
+    font-family: Arial, sans-serif;
+    color: red;
+}
+
+/* Estilos para parágrafos pares */
+.paragrafo-par {
+    font-size: 20pt;
+    font-family: Verdana, sans-serif;
+    color: blue;
+}
+
+/* Estilo de transição para alterar a cor ao passar o mouse sobre os parágrafos ímpares com os IDs `paragrafo1` e `paragrafo3` */
+#paragrafo1.paragrafo-impar, 
+#paragrafo3.paragrafo-impar {
+    transition: color 0.5s ease; /* Transição suave de cor */
+}
+
+/* Estilos para o ID `paragrafo1` com a classe `paragrafo-impar` */
+#paragrafo1.paragrafo-impar {
+    border: 2px solid purple; /* Borda sólida roxa */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento entre elementos */
+}
+
+/* Estilo para o ID `paragrafo1` com a classe `paragrafo-impar` ao passar o mouse */
+#paragrafo1.paragrafo-impar:hover {
+    color: teal; /* Cor de texto teal ao passar o mouse */
+}
+
+/* Estilos para o ID `paragrafo2` com a classe `paragrafo-par` */
+#paragrafo2.paragrafo-par {
+    border: 2px dashed blue; /* Borda azul em linha tracejada */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento entre elementos */
+}
+
+/* Estilos para o ID `paragrafo3` com a classe `paragrafo-impar` */
+#paragrafo3.paragrafo-impar {
+    border: 2px solid purple; /* Borda sólida roxa */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento entre elementos */
+}
+
+/* Estilo para o ID `paragrafo3` com a classe `paragrafo-impar` ao passar o mouse */
+#paragrafo3.paragrafo-impar:hover {
+    color: teal; /* Cor de texto teal ao passar o mouse */
+}
+
+/* Estilos para o ID `paragrafo4` com a classe `paragrafo-par` */
+#paragrafo4.paragrafo-par {
+    border: 2px dashed blue; /* Borda azul em linha tracejada */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento entre elementos */
 }
